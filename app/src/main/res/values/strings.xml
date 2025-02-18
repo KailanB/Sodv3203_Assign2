@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Assign2_Kailan</string>
+
+
+
+    <string name="frankie_image_description">Frankie the Dog</string>
+    <string name="leroy_image_description">Leroy the Dog</string>
+    <string name="tzeitel_image_description">Tzeitel the Dog</string>
+
+    <string name="frankie_description">Frankie playing in the yard</string>
+    <string name="leroy_description">Leroy Enjoying doing dog things</string>
+    <string name="tzeitel_description">Tzeitel has a really bad name</string>
+
+    <string name="frankie_artist">Frankie D</string>
+    <string name="leroy_artist">Leroy Jenkins</string>
+    <string name="tzeitel_artist">Tzeitel Teentsy</string>
+
+    <string name="frankie_year">(1905)</string>
+    <string name="leroy_year">(1995)</string>
+    <string name="tzeitel_year">(2000)</string>
 </resources>
