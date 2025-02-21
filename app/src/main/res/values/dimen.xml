@@ -5,5 +5,7 @@
     <dimen name="image_canvas">440.dp</dimen>
 
 
-    <dimen name="padding_small">16.dp</dimen>
+    <dimen name="padding_small">20.dp</dimen>
+    <dimen name="padding_medium">40.dp</dimen>
+
 </resources>
