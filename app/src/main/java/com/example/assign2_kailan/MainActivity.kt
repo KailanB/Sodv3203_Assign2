@@ -46,7 +46,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.assign2_kailan.data.GalleryImage
 import com.example.assign2_kailan.data.galleryImages
 import com.example.assign2_kailan.ui.theme.Assign2_KailanTheme
 
@@ -73,17 +72,15 @@ fun GalleryDisplay(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize()
             .padding(dimensionResource(R.dimen.padding_small))
     ){
-        Spacer(modifier = Modifier.size(128.dp))
+        Spacer(modifier = Modifier.size(64.dp))
         GalleryImage(galleryIndex)
         Column(
-            horizontalAlignment = Alignment.CenterHorizontally
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.SpaceBetween
         ){
-            Spacer(modifier = Modifier.weight(1f))
-            Spacer(modifier = Modifier.size(32.dp))
             GalleryItemDescription(galleryIndex)
             Spacer(modifier = Modifier.size(32.dp))
             GalleryButtons(galleryIndex, onClick = {indexChange: Int -> galleryIndex = indexChange})
-            Spacer(modifier = Modifier.size(32.dp))
         }
 
     }
@@ -165,7 +162,7 @@ fun GalleryButtons(
 
 
     Row(
-        horizontalArrangement = Arrangement.SpaceAround,
+        horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.fillMaxWidth()
     ){
