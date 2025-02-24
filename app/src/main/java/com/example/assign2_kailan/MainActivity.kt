@@ -170,7 +170,10 @@ fun GalleryButtons(
         modifier = Modifier.fillMaxWidth()
     ){
         Button(
-            colors = ButtonDefaults.buttonColors(containerColor = colorResource(R.color.buttons)),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = colorResource(R.color.buttons),
+                contentColor = Color.White
+            ),
             onClick = {
                 // since we are going backwards in the gallery we check if we are beyond the first image
                 if(galleryIndex > 0)
@@ -193,7 +196,10 @@ fun GalleryButtons(
             )
         }
         Button(
-            colors = ButtonDefaults.buttonColors(containerColor = colorResource(R.color.buttons)),
+            colors = ButtonDefaults.buttonColors(
+                containerColor = colorResource(R.color.buttons),
+                contentColor = Color.White
+            ),
             onClick = {
                 // check if current index is at last index of gallery
                 if(galleryIndex >= galleryImages.size - 1)
